@@ -49,6 +49,7 @@ def get_path(argv):
         elif opt in ('-i', '--infile'):
             file_path = arg
     return file_path
+    
 if __name__ == '__main__':
     file_path = get_path(sys.argv[1:])
     kmx_to_mp4(file_path)
